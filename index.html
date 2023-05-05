@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="C-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PERFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ce7aaec39.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="header">
+        
+        <div class="container">
+
+            <nav>
+                <img src ="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>FRONT-END DEVELOPER</p>
+                <h1>Hi, I'm <span>JD Congreso</span><br>From the Philippines.</h1>
+            </div>
+
+        </div>
+    </div>
+<!-------------ABOUT------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                    <div class="about-col-2"></div>
+                    <h1 class ="sub-title">ABOUT ME</h1>
+                    <p> I am 3rd year College Student at Quezon City Universtiy, with the course of 
+                       Bachelor of Science in Information Technology.</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                       </div>
+
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span>Desgning Web/App interfaces</li>
+                            <li><span>Web Development</span>Web Application Development</li>
+                            <li><span>App Development</span> Mobile application Development</li>
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span>Desgning Web/App interfaces</li>
+                            <li><span>Web Development</span>Web Application Development</li>
+                            <li><span>App Development</span> Mobile application Development</li>
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>COLLEGE</span>Bachelor of Science in Information Technology at Quezon City University. SY.2020- Present</li>
+                            <li><span>Senior High School</span>Accountancy Business Management at Metro Manila College. SY 2018-2022</li>
+                            <li><span>Junior High School</span> Student Athlete at San Bartolome High School. 2012-2018</li>
+                        </ul>
+                       </div>
+                    </div>
+        </div>
+    </div>
+
+
+<!---------------services----------->
+
+<div id="services">
+    <div class="container">
+        <h1 class ="sub-title">My Services</h1>  
+        <div class="services-list">
+            <div>
+                <i class="fa-duotone fa-code"></i>
+                <h2>Web Design</h2>
+                <p> i create website design, i do basic and still rellay on customer pre-request.</p>
+                <a href="#">Learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-duotone fa-crop"></i>
+                <h2> UI/UX Design </h2>
+                <p> i create UI /UX design, i do basic and still rellay on customer pre-request.</p>
+                <a href="#">Learn more</a>
+                
+            </div>
+            <div>
+                <i class="fa-thin fa-mobile"></i>
+                <h2> Mobile Application Developer</h2>
+                <p> i create Mobile Application, i do basic and still rellay on customer pre-request.</p>
+                <a href="#">Learn more</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------Portfolio-------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
+                <a href="#"><i class="fa-duotone fa-link"></i></a>
+                
+            </div>
+        </div>
+
+        <div class="work-list">
+            <img src="images/work-2.png">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
+                <a href="#"><i class="fa-duotone fa-link"></i></a>
+        </div>
+
+        <div class="work-list">
+            <img src="images/work-3.png">
+            <div class="layer">
+                <h3> Online shop Application</h3>
+                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
+                <a href="#"><i class="fa-duotone fa-link"></i></a>
+        </div>
+    </div>
+</div>
+<script>
+    var tablink = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+</script>
+</body>
+</html>
