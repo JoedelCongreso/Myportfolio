@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PERFOLIO</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0ce7aaec39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="container">
 
             <nav>
-                <img src ="images/logo.png" class="logo">
+                <img src ="logo.png" class="logo">
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -40,17 +40,17 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="image/user.png">
+                    <img src="me.jpg">
                 </div>
-                    <div class="about-col-2"></div>
-                    <h1 class ="sub-title">ABOUT ME</h1>
+                    <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
                     <p> I am 3rd year College Student at Quezon City Universtiy, with the course of 
                        Bachelor of Science in Information Technology.</p>
 
                        <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"onclick="opentab('experience')">Experience </p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                        </div>
 
                        <div class="tab-contents active-tab" id="skills">
@@ -79,7 +79,9 @@
                     </div>
         </div>
     </div>
+    </div>
 
+    
 
 <!---------------services----------->
 
@@ -88,21 +90,25 @@
         <h1 class ="sub-title">My Services</h1>  
         <div class="services-list">
             <div>
-                <i class="fa-duotone fa-code"></i>
+                <span class="material-symbols-outlined">
+                    web
+                    </span>
                 <h2>Web Design</h2>
                 <p> i create website design, i do basic and still rellay on customer pre-request.</p>
                 <a href="#">Learn more</a>
 
             </div>
             <div>
-                <i class="fa-duotone fa-crop"></i>
+                <span class="material-symbols-outlined">
+                    developer_mode
+                    </span>
                 <h2> UI/UX Design </h2>
                 <p> i create UI /UX design, i do basic and still rellay on customer pre-request.</p>
                 <a href="#">Learn more</a>
                 
             </div>
             <div>
-                <i class="fa-thin fa-mobile"></i>
+                
                 <h2> Mobile Application Developer</h2>
                 <p> i create Mobile Application, i do basic and still rellay on customer pre-request.</p>
                 <a href="#">Learn more</a>
@@ -118,34 +124,40 @@
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <img src="images/work-1.png">
-            <div class="layer">
-                <h3>Social Media App</h3>
-                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
-                <a href="#"><i class="fa-duotone fa-link"></i></a>
-                
+            <div class="work">
+                <img src="web.jpg">
+
+                <div class="layer">
+                    <h3>Web Design</h3>
+                    <p>fbgjhjsbfshbdshbhssdnbchdfhdbhjbshdfsdhfvsfvhdfvdhsfvhfvhdvfhfvdh.</p>
+                    <a href="#"><span class="material-symbols-outlined">link</span></a>
+                </div>
+
             </div>
-        </div>
+                <div class="work">
+                    <img src="ui.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>fbgjhjsbfshbdshbhssdnbchdfhdbhjbshdfsdhfvsfvhdfvdhsfvhfvhdvfhfvdh.</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                    
+                </div>
 
-        <div class="work-list">
-            <img src="images/work-2.png">
-            <div class="layer">
-                <h3>Music App</h3>
-                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
-                <a href="#"><i class="fa-duotone fa-link"></i></a>
-        </div>
-
-        <div class="work-list">
-            <img src="images/work-3.png">
-            <div class="layer">
-                <h3> Online shop Application</h3>
-                <p>fhdvfhsdvfghfvhgdfvsdhf</p>
-                <a href="#"><i class="fa-duotone fa-link"></i></a>
+                    <div class="work">
+                    <img src="mobile.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>fbgjhjsbfshbdshbhssdnbchdfhdbhjbshdfsdhfvsfvhdfvdhsfvhfvhdvfhfvdh.</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+            </div>
         </div>
     </div>
 </div>
+
 <script>
-    var tablink = document.getElementsByClassName("tab-links");
+    var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
@@ -155,7 +167,12 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+
+
 </body>
 </html>
